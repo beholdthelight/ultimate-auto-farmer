@@ -29,8 +29,34 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginWindow));
+            this.m_btn_Settings = new UltimateAutoFarmer.CustomControls.UCButton();
+            this.m_btn_Add = new UltimateAutoFarmer.CustomControls.UCButton();
             this.ucExitButton1 = new UltimateAutoFarmer.CustomControls.UCExitButton();
             this.SuspendLayout();
+            // 
+            // m_btn_Settings
+            // 
+            this.m_btn_Settings.BackColor = System.Drawing.Color.Transparent;
+            this.m_btn_Settings.BackgroundImage = global::UltimateAutoFarmer.Properties.Resources.cogwheels;
+            this.m_btn_Settings.BackgroundImageDefault = global::UltimateAutoFarmer.Properties.Resources.cogwheels;
+            this.m_btn_Settings.BackgroundImageHover = global::UltimateAutoFarmer.Properties.Resources.cogwheels_h;
+            this.m_btn_Settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m_btn_Settings.Location = new System.Drawing.Point(183, 89);
+            this.m_btn_Settings.Name = "m_btn_Settings";
+            this.m_btn_Settings.Size = new System.Drawing.Size(30, 30);
+            this.m_btn_Settings.TabIndex = 2;
+            // 
+            // m_btn_Add
+            // 
+            this.m_btn_Add.BackColor = System.Drawing.Color.Transparent;
+            this.m_btn_Add.BackgroundImage = global::UltimateAutoFarmer.Properties.Resources.add;
+            this.m_btn_Add.BackgroundImageDefault = global::UltimateAutoFarmer.Properties.Resources.add;
+            this.m_btn_Add.BackgroundImageHover = global::UltimateAutoFarmer.Properties.Resources.add_h;
+            this.m_btn_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m_btn_Add.Location = new System.Drawing.Point(136, 89);
+            this.m_btn_Add.Name = "m_btn_Add";
+            this.m_btn_Add.Size = new System.Drawing.Size(30, 30);
+            this.m_btn_Add.TabIndex = 1;
             // 
             // ucExitButton1
             // 
@@ -46,7 +72,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(284, 131);
+            this.ClientSize = new System.Drawing.Size(284, 144);
+            this.Controls.Add(this.m_btn_Settings);
+            this.Controls.Add(this.m_btn_Add);
             this.Controls.Add(this.ucExitButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginWindow";
@@ -60,6 +88,8 @@
         #endregion
 
         private CustomControls.UCExitButton ucExitButton1;
+        private CustomControls.UCButton m_btn_Add;
+        private CustomControls.UCButton m_btn_Settings;
 
 
 
