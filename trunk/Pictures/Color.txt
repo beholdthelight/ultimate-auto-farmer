@@ -1,0 +1,3 @@
+Color of every item: 1f2e76
+Hover: 3c4ea4
+
