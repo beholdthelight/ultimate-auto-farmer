@@ -1,0 +1,68 @@
+﻿namespace UltimateAutoFarmer
+{
+    partial class LoginWindow
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginWindow));
+            this.ucExitButton1 = new UltimateAutoFarmer.CustomControls.UCExitButton();
+            this.SuspendLayout();
+            // 
+            // ucExitButton1
+            // 
+            this.ucExitButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucExitButton1.BackgroundImage")));
+            this.ucExitButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ucExitButton1.Location = new System.Drawing.Point(248, 8);
+            this.ucExitButton1.Name = "ucExitButton1";
+            this.ucExitButton1.Size = new System.Drawing.Size(15, 15);
+            this.ucExitButton1.TabIndex = 0;
+            // 
+            // LoginWindow
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(284, 131);
+            this.Controls.Add(this.ucExitButton1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "LoginWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "LoginWindow";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.LoginWindow_MouseDown);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private CustomControls.UCExitButton ucExitButton1;
+
+
+
+
+    }
+}
