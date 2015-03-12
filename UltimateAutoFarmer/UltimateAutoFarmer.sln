@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltimateAutoFarmer", "UltimateAutoFarmer\UltimateAutoFarmer.csproj", "{A1B3C11A-592F-4CCF-8107-1584E71F4367}"
 EndProject
 Global

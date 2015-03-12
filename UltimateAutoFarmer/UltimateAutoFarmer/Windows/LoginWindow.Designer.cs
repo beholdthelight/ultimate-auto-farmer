@@ -29,10 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginWindow));
+            this.MainTitle = new UltimateAutoFarmer.CustomControls.UCLabel();
             this.m_btn_Settings = new UltimateAutoFarmer.CustomControls.UCButton();
             this.m_btn_Add = new UltimateAutoFarmer.CustomControls.UCButton();
             this.ucExitButton1 = new UltimateAutoFarmer.CustomControls.UCExitButton();
             this.SuspendLayout();
+            // 
+            // MainTitle
+            // 
+            this.MainTitle.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MainTitle.BackColor = System.Drawing.Color.Transparent;
+            this.MainTitle.Location = new System.Drawing.Point(1, 1);
+            this.MainTitle.Name = "MainTitle";
+            this.MainTitle.Size = new System.Drawing.Size(137, 22);
+            this.MainTitle.TabIndex = 3;
+            this.MainTitle.Text = "Ultimate Auto Farmer";
             // 
             // m_btn_Settings
             // 
@@ -71,8 +82,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(284, 144);
+            this.Controls.Add(this.MainTitle);
             this.Controls.Add(this.m_btn_Settings);
             this.Controls.Add(this.m_btn_Add);
             this.Controls.Add(this.ucExitButton1);
@@ -90,6 +102,7 @@
         private CustomControls.UCExitButton ucExitButton1;
         private CustomControls.UCButton m_btn_Add;
         private CustomControls.UCButton m_btn_Settings;
+        private CustomControls.UCLabel MainTitle;
 
 
 
