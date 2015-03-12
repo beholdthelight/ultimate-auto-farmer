@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UltimateAutoFarmer</RootNamespace>
     <AssemblyName>UltimateAutoFarmer</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -56,6 +56,22 @@
     <Compile Include="CustomControls\UCExitButton.Designer.cs">
       <DependentUpon>UCExitButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\UCLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UCLabel.Designer.cs">
+      <DependentUpon>UCLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\Lang_en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lang_en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\Lang_hu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lang_hu.resx</DependentUpon>
+    </Compile>
     <Compile Include="Windows\LoginWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +85,17 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UCExitButton.resx">
       <DependentUpon>UCExitButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\UCLabel.resx">
+      <DependentUpon>UCLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Lang_en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lang_en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Lang_hu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lang_hu.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
