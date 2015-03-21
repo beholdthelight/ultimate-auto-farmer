@@ -34,11 +34,11 @@
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Font = new System.Drawing.Font("Arial", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label.Font = new System.Drawing.Font("Arial Narrow", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(118)))));
-            this.label.Location = new System.Drawing.Point(5, 5);
+            this.label.Location = new System.Drawing.Point(-3, 0);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(41, 15);
+            this.label.Size = new System.Drawing.Size(34, 15);
             this.label.TabIndex = 0;
             this.label.Text = "label1";
             // 
@@ -50,7 +50,7 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.label);
             this.Name = "UCLabel";
-            this.Size = new System.Drawing.Size(43, 22);
+            this.Size = new System.Drawing.Size(54, 19);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,5 +59,7 @@
         #endregion
 
         private System.Windows.Forms.Label label;
+
+
     }
 }

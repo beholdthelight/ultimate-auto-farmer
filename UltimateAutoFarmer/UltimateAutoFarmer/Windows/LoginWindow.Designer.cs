@@ -29,21 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginWindow));
-            this.MainTitle = new UltimateAutoFarmer.CustomControls.UCLabel();
+            this.ucLabel1 = new UltimateAutoFarmer.CustomControls.UCLabel();
             this.m_btn_Settings = new UltimateAutoFarmer.CustomControls.UCButton();
             this.m_btn_Add = new UltimateAutoFarmer.CustomControls.UCButton();
             this.ucExitButton1 = new UltimateAutoFarmer.CustomControls.UCExitButton();
             this.SuspendLayout();
             // 
-            // MainTitle
+            // ucLabel1
             // 
-            this.MainTitle.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.MainTitle.BackColor = System.Drawing.Color.Transparent;
-            this.MainTitle.Location = new System.Drawing.Point(1, 1);
-            this.MainTitle.Name = "MainTitle";
-            this.MainTitle.Size = new System.Drawing.Size(137, 22);
-            this.MainTitle.TabIndex = 3;
-            this.MainTitle.Text = "Ultimate Auto Farmer";
+            this.ucLabel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ucLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.ucLabel1.CustomFont = UltimateAutoFarmer.CustomControls.UCLabel.OwnFonts.Checkout;
+            this.ucLabel1.FontSize = 12;
+            this.ucLabel1.Location = new System.Drawing.Point(12, 8);
+            this.ucLabel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucLabel1.Name = "ucLabel1";
+            this.ucLabel1.Size = new System.Drawing.Size(192, 19);
+            this.ucLabel1.TabIndex = 3;
+            this.ucLabel1.Text = "Ultimate Auto Farmer";
             // 
             // m_btn_Settings
             // 
@@ -82,9 +85,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(284, 144);
-            this.Controls.Add(this.MainTitle);
+            this.Controls.Add(this.ucLabel1);
             this.Controls.Add(this.m_btn_Settings);
             this.Controls.Add(this.m_btn_Add);
             this.Controls.Add(this.ucExitButton1);
@@ -102,10 +105,7 @@
         private CustomControls.UCExitButton ucExitButton1;
         private CustomControls.UCButton m_btn_Add;
         private CustomControls.UCButton m_btn_Settings;
-        private CustomControls.UCLabel MainTitle;
-
-
-
+        private CustomControls.UCLabel ucLabel1;
 
     }
 }
